@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifneq (,$(findstring $(TARGET_DEVICE),toro torospr))
+ifeq ($(TARGET_DEVICE),toro)
 
 # Edify extension functions for doing modem (radio) updates on Toro devices.
 

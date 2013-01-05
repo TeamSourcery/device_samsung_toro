@@ -5,6 +5,7 @@
 rild.libpath=/vendor/lib/libsec-ril_lte.so
 rild.libargs=-d /dev/ttys0
 telephony.lteOnCdmaDevice=1
+ro.config.svlte1x=true
 
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
 ro.telephony.call_ring.multiple=0
@@ -15,6 +16,9 @@ persist.radio.imsallowmtsms=1
 
 # Default ecclist
 ro.ril.ecclist=112,911,#911,*911
+
+# Default to LTE/CDMA Network Mode
+ro.telephony.default_network=7
 
 # hardware info
 ro.device.cpu=1.2GHz dual-core TI OMAP 4460
